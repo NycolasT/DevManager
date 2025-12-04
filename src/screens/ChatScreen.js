@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import axios from 'axios';
 
 // --- CONFIGURAÇÃO ---
-const GEMINI_API_KEY = "AIzaSyBAnxcTD7qn05pa34H2DeiWpQclY0kyzJk"; 
+const GEMINI_API_KEY = "chave; 
 const MODEL_NAME = "gemini-flash-latest"; 
 
 const ChatScreen = ({ route }) => {
@@ -170,5 +170,6 @@ const styles = StyleSheet.create({
     borderColor: '#fff'
   },
 });
+
 
 export default ChatScreen;
