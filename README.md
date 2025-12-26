@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# 💻 DevManager | Terminal-Style Productivity Hub
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Desenvolvimento-green?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Estética-Terminal%20/%20Cyberpunk-8250df?style=for-the-badge" alt="Estética" />
+</div>
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Sobre o Projeto
 
+O **DevManager** é um aplicativo mobile desenvolvido para entusiastas de tecnologia e segurança que preferem a eficiência e a estética dos terminais de comando. O app centraliza ferramentas de produtividade, consumo de notícias técnicas e assistência por inteligência artificial em uma interface inspirada no "GitHub Dark" e no "Matrix Mode".
+
+Este projeto demonstra o domínio de fluxos complexos em **React Native**, integração com **IA Generativa**, persistência de dados local e consumo de **APIs externas**.
+
+---
+
+## ✨ Funcionalidades Principais
+
+- 🤖 **AI Assistant (Terminal Chat):** Chat interativo integrado à API do **Google Gemini (flash-latest)** para assistência técnica imediata.
+- 📝 **Task Log (CRUD):** Gerenciador de tarefas com persistência de dados utilizando **SQLite**, permitindo criar, listar e deletar logs de atividades.
+- 📰 **Dev News Feed:** Consumo em tempo real dos artigos mais relevantes da comunidade **Dev.to** via API REST.
+- ⏰ **System Alerts:** Sistema de agendamento de notificações locais para lembretes de tarefas.
+- 👤 **User Config:** Customização de perfil com suporte a upload de imagens da galeria ou captura via câmera.
+- 🔐 **Secure Access:** Autenticação protegida e gerenciamento de tokens via **Clerk** e **SecureStore**.
+
+---
+
+## 🛠️ Stack Técnica
+
+| Tecnologia | Finalidade |
+| :--- | :--- |
+| **React Native / Expo** | Framework de desenvolvimento mobile. |
+| **Google Gemini API** | Inteligência Artificial para o chat assistente. |
+| **SQLite (expo-sqlite)** | Banco de dados local para armazenamento de tarefas. |
+| **Axios** | Requisições HTTP para APIs externas. |
+| **Clerk** | Gerenciamento completo de autenticação. |
+| **Reanimated** | Animações fluidas de interface. |
+
+---
+
+## 🎨 Interface & UX
+
+A interface foi projetada para simular um ambiente de desenvolvimento (IDE/Terminal):
+- **Tipografia:** Uso predominante de fontes **Monospace (Courier)** para reforçar a estética de código.
+- **Cores:** Paleta baseada no `#0d1117` (GitHub Dark) com detalhes em **Verde Matrix** e **Roxo Dev**.
+- **Feedback Visual:** Linhas de log prefixadas com `USER@DEV:~$` para diferenciar as interações.
+
+---
+
+## 🚀 Como Executar
+
+1. **Clonar o repositório:**
    ```bash
-   npm install
-   ```
+   git clone [https://github.com/NycolasT/DevManager.git](https://github.com/NycolasT/DevManager.git)
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+2. **Instalar dependências:**
 
 ```bash
-npm run reset-project
+npm install
+```
+3. **Configurar variáveis de ambiente: Crie um arquivo .env e adicione suas chaves:**
+```bash
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=sua_chave_aqui
+GEMINI_API_KEY=sua_chave_aqui
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+5. **Iniciar o projeto:**
+   ```bash
+   npx expo start
+```
+   
+   
